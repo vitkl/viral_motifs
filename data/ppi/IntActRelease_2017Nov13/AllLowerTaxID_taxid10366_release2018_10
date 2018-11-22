@@ -1,0 +1,6 @@
+Taxon	Mnemonic	Scientific name	Common name	Synonym	Other Names	Reviewed	Rank	Lineage	Parent	Virus hosts
+524651		Muromegalovirus WP15B				annotated		Viruses; dsDNA viruses, no RNA stage; Herpesvirales; Herpesviridae; Betaherpesvirinae; Muromegalovirus	10366	
+524650		Muromegalovirus G4				annotated		Viruses; dsDNA viruses, no RNA stage; Herpesvirales; Herpesviridae; Betaherpesvirinae; Muromegalovirus	10366	
+69156	MUHVK	Murid herpesvirus 1 (strain K181)	MuHV-1	Mouse cytomegalovirus	Murine cytomegalovirus (strain K181)	reviewed		Viruses; dsDNA viruses, no RNA stage; Herpesvirales; Herpesviridae; Betaherpesvirinae; Muromegalovirus	10366	Mus musculus (Mouse)
+10367	MUHVS	Murid herpesvirus 1 (strain Smith)	MuHV-1	Mouse cytomegalovirus	Murine cytomegalovirus (strain Smith)	reviewed		Viruses; dsDNA viruses, no RNA stage; Herpesvirales; Herpesviridae; Betaherpesvirinae; Muromegalovirus	10366	Mus musculus (Mouse)
+524649		Muromegalovirus C4A				annotated		Viruses; dsDNA viruses, no RNA stage; Herpesvirales; Herpesviridae; Betaherpesvirinae; Muromegalovirus	10366	

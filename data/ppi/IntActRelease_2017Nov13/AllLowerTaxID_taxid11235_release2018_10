@@ -1,0 +1,3 @@
+Taxon	Mnemonic	Scientific name	Common name	Synonym	Other Names	Reviewed	Rank	Lineage	Parent	Virus hosts
+70146	MEASF	Measles virus (strain Edmonston B)	MeV	Subacute sclerose panencephalitis virus	Measles virus strain Edmonston-B	reviewed		Viruses; ssRNA viruses; ssRNA negative-strand viruses; Mononegavirales; Paramyxoviridae; Morbillivirus	11235	Homo sapiens (Human)
+70149	MEASZ	Measles virus (strain Edmonston-Zagreb vaccine)	MeV	Subacute sclerose panencephalitis virus	Measles virus strain Edmonston-Zagreb; Measles virus strain Zagreb; measles virus (strain edmonston-zagreb)	reviewed		Viruses; ssRNA viruses; ssRNA negative-strand viruses; Mononegavirales; Paramyxoviridae; Morbillivirus	11235	Homo sapiens (Human)

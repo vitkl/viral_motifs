@@ -1,0 +1,5 @@
+Taxon	Mnemonic	Scientific name	Common name	Synonym	Other Names	Reviewed	Rank	Lineage	Parent	Virus hosts
+10631	POVBA	BK polyomavirus (strain AS)	BKPyV		BK virus strain AS; Polyomavirus BK (strain AS)	reviewed		Viruses; dsDNA viruses, no RNA stage; Polyomaviridae	1891762	Homo sapiens (Human)
+28313		BK virus variant RF			RF virus			Viruses; dsDNA viruses, no RNA stage; Polyomaviridae	1891762	
+1417981		BK polyomavirus MM			BK virus MM; BK virus strain MM	annotated		Viruses; dsDNA viruses, no RNA stage; Polyomaviridae	1891762	
+10630		BK virus strain GS			GS virus			Viruses; dsDNA viruses, no RNA stage; Polyomaviridae	1891762	

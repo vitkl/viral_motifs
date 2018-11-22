@@ -1,0 +1,3 @@
+Taxon	Mnemonic	Scientific name	Common name	Synonym	Other Names	Reviewed	Rank	Lineage	Parent	Virus hosts
+928306	MLVMS	Moloney murine leukemia virus (isolate Shinnick)	MoMLV		Moloney murine leukemia virus isolate Shinnick	reviewed		Viruses; Ortervirales; Retroviridae; Orthoretrovirinae; Gammaretrovirus; Murine leukemia virus	11801	Mus musculus (Mouse)
+882209	MLVMN	Moloney murine leukemia virus (strain neuropathogenic variant ts1-92b)	MoMLV		Moloney murine leukemia virus neuropathogenic variant ts1-92b	reviewed		Viruses; Ortervirales; Retroviridae; Orthoretrovirinae; Gammaretrovirus; Murine leukemia virus	11801	Mus musculus (Mouse)

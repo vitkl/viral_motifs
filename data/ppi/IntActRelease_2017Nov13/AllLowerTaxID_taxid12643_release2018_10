@@ -1,0 +1,5 @@
+Taxon	Mnemonic	Scientific name	Common name	Synonym	Other Names	Reviewed	Rank	Lineage	Parent	Virus hosts
+1452750		Ectromelia virus ERPV				annotated		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus	12643	
+202273		Belo Horizonte virus				annotated		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus	12643	
+265874	ECTVM	Ectromelia virus (strain Moscow)	ECTV	Mousepox virus	Ectromelia virus Moscow	reviewed		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus	12643	Mus musculus (Mouse)
+1651168		Ectromelia virus Naval			Ectromelia virus Nav; Ectromelia virus strain Naval	annotated		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus	12643	

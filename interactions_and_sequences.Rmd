@@ -1,0 +1,146 @@
+---
+title: Identify viral-human interactions, full human interactome and download protein
+  sequences
+author: "Vitalii Kleshchevnikov"
+date: "13/07/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+packages = c("data.table","downloader","R.utils", "PSICQUIC", "ggplot2", "MItools")
+if(mean(packages %in% names(installed.packages()[,"Package"])) != 1){
+  packages_to_install = packages[!packages %in% names(installed.packages()[,"Package"])]
+  install.packages(packages_to_install)
+  packages_to_install = packages[!packages %in% names(installed.packages()[,"Package"])]
+  source("https://bioconductor.org/biocLite.R")
+  biocLite(packages_to_install)
+  devtools::install_github("vitkl/MItools")
+  devtools::install_github("vitkl/ProtDomSeq")
+}
+
+suppressPackageStartupMessages({
+  library(MItools)
+  library(ProtDomSeq)
+})
+```
+
+## Seaching for viral-human PPI  
+
+I download all protein-protein interactions from IntAct (IMEx databases) involving viral proteins using PSICQUIC service in MITAB2.7 format (https://psicquic.github.io/MiqlReference27.html). I clean the data in the table to make it more useble. Then, I filter and keep only human-viral interactions.
+
+```{r PSICQUIC_viral_human}
+release = "2017Nov13"
+directory = "./data/ppi/"
+# read all IntAct data (filter later)
+IntAct = loadIntActFTP(dir = "./data/ppi/IntActRelease_2017Nov13/",
+                       release = release)
+
+# Retrieve human and viral interactions
+human_viral = interSpeciesInteractome(MITABdata = IntAct,
+                                      taxid1 = 9606, taxid2 = 10239,
+                                      database = "IntActFTP", format = "tab27",
+                                      clean = TRUE, protein_only = TRUE,
+                                      directory = directory,
+                                      releaseORdate = release)
+# save this processed data
+fwrite(human_viral$data, "./data/ppi/human_viral.tsv", sep = "\t")
+
+# select viral proteins
+viral_proteins = unique(c(human_viral$data[Taxid_interactor_A != "9606", IDs_interactor_A], human_viral$data[Taxid_interactor_B != "9606", IDs_interactor_B]))
+# select viral taxons with known human interactions
+viral_taxons = unique(c(human_viral$data[Taxid_interactor_A != "9606", Taxid_interactor_A], human_viral$data[Taxid_interactor_B != "9606", Taxid_interactor_B]))
+
+# Retrieve viral-viral protein interactions for human-interacting viral taxons
+viral_viral = fullInteractome(taxid = viral_taxons, database = "IntActFTP", format = "tab27",
+                              clean = TRUE, protein_only = TRUE,
+                              MITABdata = IntAct, directory = directory,
+                              releaseORdate = release)
+
+# save this processed data
+fwrite(viral_viral$data, "./data/ppi/viral_viral.tsv", sep = "\t")
+```
+
+## Searching for human-human PPI
+
+I download all human-human protein-protein interactions from IntAct (IMEx databases) using PSICQUIC service in MITAB2.5 format and clean the data.
+
+```{r PSICQUIC_human_human}
+human_human = fullInteractome(taxid = 9606, database = "IntActFTP", format = "tab27",
+                                        clean = TRUE, protein_only = TRUE, 
+                                        MITABdata = IntAct, directory = directory,
+                                        releaseORdate = release)
+# save this processed data
+fwrite(human_human$data, "./data/ppi/human_human.tsv", sep = "\t")
+
+
+
+# select proteins
+all_proteins = unique(c(human_viral$data$IDs_interactor_A, human_viral$data$IDs_interactor_B,
+  viral_viral$data$IDs_interactor_A, viral_viral$data$IDs_interactor_B,
+  human_human$data$IDs_interactor_A, human_human$data$IDs_interactor_B))
+all_proteins = all_proteins[order(all_proteins)]
+```
+
+There are `r uniqueNinteractors(human_viral, taxid = 9606, inverse_filter = T)` viral_proteins that target human proteins (including isoforms and postprocessed chains).  
+There are `r uniqueNinteractors(human_viral, taxid = 9606)` human_proteins involved in human-viral interactions (including isoforms and postprocessed chains).  
+There are `r uniqueNinteractors(human_human)` human_proteins involved in human-human interactions (including isoforms and postprocessed chains).  
+
+## Finding protein sequences
+
+Interacting viral and human proteins belong to three categories:  
+- proteins identified by canonical UniProt identifier (P04637): no isoform exist or impossible to distinguish isoforms from the published result  
+- proteins identified to an isoform (P04637-1)  
+- proteins that are cleaved into the functional fragments from a precursor protein (P04591-PRO_0000261216)  
+
+These categories require different approaches of retrieving sequences.   
+1. Retrieving sequences of proteins with canonical UniProt identifier is possible with R package for UniProt webservices or UniProt REST API. These proteins also may not require InterProScan to identify domains.  
+2. Isoform sequences are accessible using UniProt REST API: http://www.uniprot.org/uniprot/P04637-2.fasta.
+3. Post-processed chains are not straightforward to map as they are defined by the interval of the canonical UniProt sequence (http://www.uniprot.org/uniprot/P04591.fasta). First, we need to retrieve post-processed chain position from Uniprot in gff format: http://www.uniprot.org/uniprot/?query=PRO_0000261216&format=gff. The search return all sequence features from a given protein, we select only post-processed chain we are interested in and then use position specified to subset the sequence.
+
+### Retrieving sequences
+
+```{r, eval=FALSE}
+all_proteins.fasta = downloadFastaMixed(uniprot_ac = all_proteins,
+                                        file_name = "./data/prot_seq/all_human_viral_proteins.fasta")
+```
+
+`r system("cat ./data/prot_seq/all_human_viral_proteins.fasta | grep \">\" | wc -l")` FASTA sequences total.
+
+## Load interactions from VirHostNet database
+
+```{r}
+# retrieve all VirHostNet data 
+# which does not understand taxonomy hierarhy so interSpeciesInteractome() will not work
+VirHostNet_raw = queryPSICQUICrlib(query = "*",
+                                   format = "tab27", database = "VirHostNet",
+                                   directory = "./data/ppi/",
+                                   releaseORdate = "20181122")
+
+# Filter this data for human-viral interactions locally
+VirHostNet = interSpeciesInteractome(taxid1 = 9606,  taxid2 = 10239, 
+                                     MITABdata = VirHostNet_raw,
+                                     database = "VirHostNet", 
+                                     clean = TRUE, protein_only = TRUE, 
+                                     directory = "./data/ppi/",
+                                     releaseORdate = "20181122")
+
+# Numbers of interactions and protein in VirHostNet
+uniqueNinteractions(VirHostNet)
+uniqueNinteractors(VirHostNet, taxid = 9606)
+uniqueNinteractors(VirHostNet, taxid = 9606, inverse_filter = T)
+
+# Find which interactions are uniquely present in VirHostNet (not IntAct)
+VirHostNet$data = VirHostNet$data[!pair_id %in% human_viral$data$pair_id]
+uniqueNinteractions(VirHostNet)
+uniqueNinteractors(VirHostNet, taxid = 9606)
+uniqueNinteractors(VirHostNet, taxid = 9606, inverse_filter = T)
+
+# save these interactions
+fwrite(VirHostNet$data, "./data/ppi/VirHostNet_human_viral.tsv", sep = "\t")
+```
+
+```{r}
+sessionInfo()
+```

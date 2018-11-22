@@ -1,0 +1,7 @@
+Taxon	Mnemonic	Scientific name	Common name	Synonym	Other Names	Reviewed	Rank	Lineage	Parent	Virus hosts
+230457		Phacochoerus africanus rhadinovirus 1				annotated		Viruses; dsDNA viruses, no RNA stage; Herpesvirales; Herpesviridae; Gammaherpesvirinae; Rhadinovirus	10385	
+10355	BHV4D	Bovine herpesvirus 4 (strain DN-599)	BoHV-4	Movar virus	Bovine herpesvirus 4 (isolate DN-599); Bovine herpesvirus type 4 (ISOLATE DN-599)	reviewed		Viruses; dsDNA viruses, no RNA stage; Herpesvirales; Herpesviridae; Gammaherpesvirinae; Rhadinovirus	10385	Felis catus (Cat) (Felis silvestris catus);Panthera leo (Lion);Bos taurus (Bovine)
+436507	BHV4V	Bovine herpesvirus 4 (strain V. test)	BoHV-4	Movar virus	Bovine herpesvirus 4 (isolate V. test)	reviewed		Viruses; dsDNA viruses, no RNA stage; Herpesvirales; Herpesviridae; Gammaherpesvirinae; Rhadinovirus	10385	Bos taurus (Bovine)
+221984		Sus barbatus rhadinovirus 1				annotated		Viruses; dsDNA viruses, no RNA stage; Herpesvirales; Herpesviridae; Gammaherpesvirinae; Rhadinovirus	10385	
+436506	BHV4L	Bovine herpesvirus 4 (strain LVR140)	BoHV-4	Movar virus	Bovine herpesvirus 4 (isolate LVR140)	reviewed		Viruses; dsDNA viruses, no RNA stage; Herpesvirales; Herpesviridae; Gammaherpesvirinae; Rhadinovirus	10385	Bos taurus (Bovine)
+221985		Babyrousa babyrussa rhadinovirus 1				annotated		Viruses; dsDNA viruses, no RNA stage; Herpesvirales; Herpesviridae; Gammaherpesvirinae; Rhadinovirus	10385	

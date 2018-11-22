@@ -1,0 +1,30 @@
+Taxon	Mnemonic	Scientific name	Common name	Synonym	Other Names	Reviewed	Rank	Lineage	Parent	Virus hosts
+397342	HSPV	Horsepox virus	HSPV			reviewed		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	Homo sapiens (Human);Equus caballus (Horse);Bos taurus (Bovine)
+502057		Vaccinia virus GLV-1h68				annotated		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	
+467144		Modified Vaccinia Ankara virus			MVA; MVA virus; Modified Vaccinia Virus Ankara	annotated		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	
+45417	RABPU	Rabbitpox virus (strain Utrecht)	RPV		Rabbitpox virus Utrecht	reviewed		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	32606	Oryctolagus cuniculus (Rabbit)
+262397		SPAN 232 virus				annotated		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	
+332193		Vaccinia Virus Acambis 3000 MVA			Vaccinia Virus (strain Acambis 3000 MVA)			Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	
+350832		Guarani P1 virus				annotated		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	
+696871		Vaccinia virus Western Reserve				annotated		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	
+10253	VACCT	Vaccinia virus (strain Tian Tan)	VACV		Vaccinia virus Tian Tan	reviewed		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	Homo sapiens (Human)
+10254	VACCW	Vaccinia virus (strain Western Reserve)	VACV	Vaccinia virus (strain WR)	Vaccinia virus WR	reviewed		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	Bos taurus (Bovine)
+10249	VACCC	Vaccinia virus (strain Copenhagen)	VACV		Vaccinia virus Copenhagen	reviewed		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	Homo sapiens (Human)
+10247	VACC6	Vaccinia virus (strain WR 65-16)	VACV		Vaccinia virus WR 65-16	reviewed		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	Homo sapiens (Human)
+124313		Cantagalo virus			Cantagalo orthopoxvirus	annotated		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	
+31531	VACCP	Vaccinia virus (strain L-IVP)	VACV		Vaccinia virus (strain L-IPV); Vaccinia virus L-IPV	reviewed		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	Homo sapiens (Human)
+10250	VACCD	Vaccinia virus (strain Dairen I)	VACV		Vaccinia virus Dairen I	reviewed		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	Homo sapiens (Human)
+10251	VACCI	Vaccinia virus (strain IHD-J)	VACV		Vaccinia virus IHD-J	reviewed		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	Homo sapiens (Human)
+301352	VACCU	Vaccinia virus (strain Tashkent)	VACV		Vaccinia virus Tashkent	reviewed		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	Homo sapiens (Human)
+10246	VACC0	Vaccinia virus (strain LC16m0)	VACV		Vaccinia virus (strain LC16MO); Vaccinia virus LC16MO	reviewed		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	Homo sapiens (Human)
+10248	VACC8	Vaccinia virus (strain LC16m8)	VACV		Vaccinia virus LC16M8	reviewed		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	Homo sapiens (Human)
+32605		Buffalopox virus			Buffalo pox virus	annotated		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	
+10252	VACCL	Vaccinia virus (strain Lister)	VACV		Vaccinia virus Lister	reviewed		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	Homo sapiens (Human)
+32606		Rabbitpox virus				annotated		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	
+126794	VACCA	Vaccinia virus (strain Ankara)	VACV		Vaccinia virus Ankara	reviewed		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	Homo sapiens (Human)
+130665		Vaccinia virus LIVP			Vaccinia virus (strain LIVP)	annotated		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	
+130666		Vaccinia virus Wyeth			Vaccinia virus (strain Wyeth)	annotated		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	
+350831		Guarani P2 virus				annotated		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	
+201444		Aracatuba virus				annotated		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	
+1651169		Vaccinia virus WAU86/88-1				annotated		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	
+691321		Vaccinia virus Mariana			Mariana virus	annotated		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus; Vaccinia virus	10245	

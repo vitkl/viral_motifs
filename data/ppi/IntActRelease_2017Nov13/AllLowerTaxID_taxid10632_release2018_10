@@ -1,0 +1,4 @@
+Taxon	Mnemonic	Scientific name	Common name	Synonym	Other Names	Reviewed	Rank	Lineage	Parent	Virus hosts
+804310		JC polyomavirus type 3						Viruses; dsDNA viruses, no RNA stage; Polyomaviridae	10632	
+804298		JC polyomavirus type 2				annotated		Viruses; dsDNA viruses, no RNA stage; Polyomaviridae	10632	
+1419710		JC polyomavirus type 3A				annotated		Viruses; dsDNA viruses, no RNA stage; Polyomaviridae	804310	

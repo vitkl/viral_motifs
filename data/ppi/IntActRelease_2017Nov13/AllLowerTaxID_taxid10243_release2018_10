@@ -1,0 +1,6 @@
+Taxon	Mnemonic	Scientific name	Common name	Synonym	Other Names	Reviewed	Rank	Lineage	Parent	Virus hosts
+130667		Cowpox virus (strain Hamburg-1985)				annotated		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus	10243	
+265871	CWPXG	Cowpox virus (strain GRI-90 / Grishak)	CPV		Cowpox virus (strain GRI-90)	reviewed		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus	10243	Homo sapiens (Human);Felis catus (Cat) (Felis silvestris catus);Loxodonta africana (African elephant);Bos taurus (Bovine);Mus musculus (Mouse);Microtus agrestis (Short-tailed field vole);Myodes glareolus (Bank vole) (Clethrionomys glareolus)
+130668		Cowpox virus (strain Turkmenia-1974)				annotated		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus	10243	
+265872	CWPXB	Cowpox virus (strain Brighton Red)	CPV		Cowpox virus (Brighton Red)	reviewed		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus	10243	Homo sapiens (Human);Felis catus (Cat) (Felis silvestris catus);Loxodonta africana (African elephant);Bos taurus (Bovine);Mus musculus (Mouse);Microtus agrestis (Short-tailed field vole);Myodes glareolus (Bank vole) (Clethrionomys glareolus)
+160797		Elephantpox virus				annotated		Viruses; dsDNA viruses, no RNA stage; Poxviridae; Chordopoxvirinae; Orthopoxvirus	10243	

@@ -1,0 +1,2 @@
+query	file	format	all.databases	n.interactions.in.database	database.not.active
+*	./data/ppi/DownloadDate_20181122/query_*tab27VirHostNet.tsv	tab27	VirHostNet	28814	""
